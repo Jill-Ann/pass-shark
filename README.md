@@ -1,6 +1,6 @@
 # pass-shark
 
-An npm library that checks the given password doesn't contain part of the username.
+An npm library that checks that a password doesn't contain part of the username.
 
 <img src="/images/cartoon-shark.png" width="180">
 
