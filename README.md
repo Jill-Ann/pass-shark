@@ -2,7 +2,7 @@
 
 An npm library that checks that a password doesn't contain part of the username.
 
-<img src="/images/cartoon-shark.png" width="180">
+<img src="/images/cartoon-shark.png" width="220">
 
 ## Installation
 
@@ -17,7 +17,7 @@ If the longest common substring is half the length (or more) of the username or 
 ```
 const validate = require('pass-shark')
 
-validate('somename', 'somepass')
+validate('somename', 'somepass') // returns false
 ```
 
 ## License
