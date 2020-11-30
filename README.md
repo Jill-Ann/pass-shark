@@ -2,7 +2,7 @@
 
 An npm library that checks the given password doesn't contain part of the username.
 
-![Image of Shark](/images/cartoon-shark.png)
+<img src="/images/cartoon-shark.png" width="100">
 
 ## Installation
 
