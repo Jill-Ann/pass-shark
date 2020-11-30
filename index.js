@@ -1,4 +1,7 @@
 const validate = (username, password) => {
+  if (typeof username !== "string" || typeof password !== "string") {
+    throw new TypeError("Please pass in a string");
+  }
   const substrLength = Math.ceil(
     Math.min(username.length, password.length) / 2
   );
