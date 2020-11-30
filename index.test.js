@@ -34,3 +34,7 @@ it("accepts symbols", () => {
   const result = validate("whatever$%&#*", "neverever$%&#*");
   expect(result).toBe(false);
 });
+
+it("should throw an error if something other than a string is passed in", () => {
+  expect(() => validate("myUsername", 12345)).toThrow(TypeError);
+});
