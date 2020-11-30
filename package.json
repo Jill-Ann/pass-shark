@@ -1,0 +1,29 @@
+{
+  "name": "pass-shark",
+  "version": "1.0.0",
+  "description": "An npm library that checks the given password doesn't contain part of the username.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jill-Ann/pass-shark.git"
+  },
+  "keywords": [
+    "password",
+    "username",
+    "security",
+    "shark",
+    "validation"
+  ],
+  "author": "Jill-Ann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jill-Ann/pass-shark/issues"
+  },
+  "homepage": "https://github.com/Jill-Ann/pass-shark#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
