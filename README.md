@@ -1,24 +1,51 @@
 # pass-shark
 
-An npm library that checks that a password doesn't contain part of the username.
+An npm library that checks that the given password isn't too similar to the username.
 
-<img src="/images/cartoon-shark.png" width="220">
+![Image of Shark](/images/cartoon-shark.png)
+
+## How it works
+
+pass-shark checks that the password doesn't contain a substring of the username over a certain length.
+
+The length of the substring is half the length of either the username or password, whichever is shortest, and rounded up.
+
+So if there is substring of this length or longer, then it won't be accepted and will return false. Otherwise it will return true.
+
+At the moment pass-shark is case sensitive and only checks for consecutive characters. More options coming soon!
 
 ## Installation
 
-```
+```sh
 $ npm i pass-shark
 ```
 
 ## Usage
 
-If the longest common substring is half the length (or more) of the username or password then it won't be accepted and will return false. Otherwise it will return true.
+```js
+const validate = require("pass-shark");
 
-```
-const validate = require('pass-shark')
+validate("Sharkname", "Sharkpass"); // returns false
 
-validate('somename', 'somepass') // returns false
+validate("somename", "somepass"); // returns false
+
+validate("myUsername", "aSecurePassword"); // returns true
+
+validate("RainbowPenguin", "R*a*i*n*b*o*w*P*e*n*g*u*i*n"); // returns true
 ```
+
+## Coming soon...
+
+Features to be added in the future:
+
+- The option to make it case insensitive.
+- The option to choose the length of the username substring that is permitted in the password.
+
+## Credits
+
+Thanks to [Bethany](https://www.codewars.com/users/Bethany) and this [kata](https://www.codewars.com/kata/5c511d8877c0070e2c195faf/javascript "Codewars") for the inspiration for this package.
+
+Shark clipart png from [pngtree.com](https://pngtree.com/so/shark-clipart)
 
 ## License
 
@@ -44,4 +71,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-<!-- <a href='https://pngtree.com/so/shark-clipart'>shark clipart png from pngtree.com</a> -->
+```
+
+```
