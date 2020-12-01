@@ -4,7 +4,7 @@
 
 
 
-An npm library that checks that a password isn't too similar to the username.
+An npm library that checks that a password doesn't contain part of the username.
 
 <img src="https://user-images.githubusercontent.com/60620619/100767228-ce8aac80-33f9-11eb-8b9b-a461e3ca2ac0.png" alt="shark" width="220" />
 
