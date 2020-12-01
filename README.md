@@ -34,6 +34,8 @@ validate("myUsername", "aSecurePassword"); // returns true
 validate("RainbowPenguin", "R*a*i*n*b*o*w*P*e*n*g*u*i*n"); // returns true
 ```
 
+It will return false if either username or password are empty strings.
+
 ## Coming soon...
 
 Features to be added in the future:
