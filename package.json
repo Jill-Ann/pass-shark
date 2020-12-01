@@ -4,7 +4,7 @@
   "description": "An npm library that checks the given password doesn't contain part of the username.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
