@@ -1,7 +1,7 @@
 {
   "name": "pass-shark",
   "version": "1.0.0",
-  "description": "An npm library that checks the given password doesn't contain part of the username.",
+  "description": "An npm library that checks that a password doesn't contain part of the username.",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage"
