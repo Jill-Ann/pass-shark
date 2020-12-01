@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/Jill-Ann/pass-shark/badge.svg?branch=main)](https://coveralls.io/github/Jill-Ann/pass-shark?branch=main)
+
 # pass-shark
 
 An npm library that checks that a password isn't too similar to the username.
